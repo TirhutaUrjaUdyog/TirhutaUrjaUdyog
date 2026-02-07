@@ -51,7 +51,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
 /* Navigation */
 .navbar {
-    background: #e91e63;
+    background: #ffc0cb;
     box-shadow: 0 2px 10px rgba(0,0,0,0.15);
     position: fixed;
     top: 0;
@@ -78,7 +78,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 }
 
 .nav-brand h2 {
-    color: white;
+    color: #2d3748;
     margin: 0;
     font-size: 1.5rem;
 }
@@ -90,16 +90,16 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
 .nav-link {
     text-decoration: none;
-    color: white;
+    color: #2d3748;
     font-weight: 500;
     transition: all 0.3s ease;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .nav-link:hover,
 .nav-link.active {
     opacity: 1;
-    text-shadow: 0 0 10px rgba(255,255,255,0.5);
+    color: #1a202c;
 }
 
 .nav-toggle {
@@ -111,7 +111,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background: white;
+    background: #2d3748;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -605,7 +605,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
         top: 100%;
         left: 0;
         right: 0;
-        background: #e91e63;
+        background: #ffc0cb;
         flex-direction: column;
         padding: 1rem;
         box-shadow: 0 2px 10px rgba(0,0,0,0.15);
@@ -618,7 +618,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
     .nav-link {
         padding: 0.75rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.2);
+        border-bottom: 1px solid rgba(45, 55, 72, 0.2);
     }
 
     .nav-logo {
