@@ -1,23 +1,41 @@
-// Mobile Navigation Toggle
+// Mobile Navigation Toggle - Enhanced Version
 document.addEventListener('DOMContentLoaded', function() {
     const navToggle = document.getElementById('nav-toggle');
     const navMenu = document.getElementById('nav-menu');
     
     if (navToggle && navMenu) {
-        navToggle.addEventListener('click', function() {
-            // Toggle active class on hamburger button
+        // Toggle menu on hamburger click
+        navToggle.addEventListener('click', function(e) {
+            e.stopPropagation();
             navToggle.classList.toggle('active');
-            
-            // Toggle active class on menu
             navMenu.classList.toggle('active');
+            
+            // Prevent body scroll when menu is open
+            if (navMenu.classList.contains('active')) {
+                document.body.style.overflow = 'hidden';
+            } else {
+                document.body.style.overflow = '';
+            }
+        });
+
+        // Close menu when clicking on the ::before pseudo-element (X button)
+        navMenu.addEventListener('click', function(e) {
+            // Check if click is in the top-right area where the X button is
+            const rect = navMenu.getBoundingClientRect();
+            const clickX = e.clientX - rect.left;
+            const clickY = e.clientY - rect.top;
+            
+            // If clicked in top-right corner area (where X button is)
+            if (clickX > rect.width - 80 && clickY < 80) {
+                closeMenu();
+            }
         });
 
         // Close menu when clicking on a nav link
         const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+                closeMenu();
             });
         });
 
@@ -26,10 +44,23 @@ document.addEventListener('DOMContentLoaded', function() {
             const isClickInsideNav = navToggle.contains(event.target) || navMenu.contains(event.target);
             
             if (!isClickInsideNav && navMenu.classList.contains('active')) {
-                navToggle.classList.remove('active');
-                navMenu.classList.remove('active');
+                closeMenu();
             }
         });
+        
+        // Close menu on escape key
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && navMenu.classList.contains('active')) {
+                closeMenu();
+            }
+        });
+        
+        // Helper function to close menu
+        function closeMenu() {
+            navToggle.classList.remove('active');
+            navMenu.classList.remove('active');
+            document.body.style.overflow = '';
+        }
     }
 });
 
@@ -48,13 +79,12 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         const href = this.getAttribute('href');
         
-        // Only prevent default for internal page anchors (not just #)
         if (href !== '#' && href.includes('#')) {
             e.preventDefault();
             const target = document.querySelector(href.split('#')[1] ? '#' + href.split('#')[1] : href);
             
             if (target) {
-                const offsetTop = target.offsetTop - 80; // Account for fixed navbar
+                const offsetTop = target.offsetTop - 80;
                 window.scrollTo({
                     top: offsetTop,
                     behavior: 'smooth'
@@ -64,44 +94,24 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Form submission handler (for contact form)
+// Form submission handler
 const contactForm = document.getElementById('contact-form');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Get form data
         const formData = new FormData(contactForm);
         const data = {};
         formData.forEach((value, key) => {
             data[key] = value;
         });
         
-        // Here you would typically send the data to a server
-        // For now, we'll just show a success message
         alert('Thank you for your message! We will get back to you soon.');
         contactForm.reset();
-        
-        // In a real implementation, you would do something like:
-        // fetch('your-server-endpoint', {
-        //     method: 'POST',
-        //     headers: {
-        //         'Content-Type': 'application/json',
-        //     },
-        //     body: JSON.stringify(data)
-        // })
-        // .then(response => response.json())
-        // .then(data => {
-        //     alert('Thank you for your message!');
-        //     contactForm.reset();
-        // })
-        // .catch(error => {
-        //     alert('Sorry, there was an error. Please try again.');
-        // });
     });
 }
 
-// Animation on scroll (optional enhancement)
+// Animation on scroll
 const observerOptions = {
     threshold: 0.1,
     rootMargin: '0px 0px -50px 0px'
@@ -116,7 +126,6 @@ const observer = new IntersectionObserver(function(entries) {
     });
 }, observerOptions);
 
-// Observe elements for animation
 document.addEventListener('DOMContentLoaded', function() {
     const animateElements = document.querySelectorAll('.service-card, .value-card, .stat-card');
     animateElements.forEach(el => {
