@@ -8,12 +8,12 @@
 }
 
 :root {
-    /* Color Palette - Energy & Nature */
-    --primary: #2B7A4F;
-    --primary-light: #3A9B5F;
-    --primary-dark: #1F5A3A;
-    --accent: #E07A5F;
-    --accent-light: #F2CC8F;
+    /* Color Palette - Brand Colors from Logo */
+    --primary: #4485AB;
+    --primary-light: #5A9BC4;
+    --primary-dark: #356A8A;
+    --accent: #DD7E7C;
+    --accent-light: #F5A5A3;
     --dark: #1A1A2E;
     --dark-light: #2D2D44;
     --light: #F7F7F2;
@@ -22,9 +22,9 @@
     --text-light: #718096;
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, #2B7A4F 0%, #3A9B5F 100%);
-    --gradient-hero: linear-gradient(135deg, #1A1A2E 0%, #2B7A4F 50%, #3A9B5F 100%);
-    --gradient-accent: linear-gradient(135deg, #E07A5F 0%, #F2CC8F 100%);
+    --gradient-primary: linear-gradient(135deg, #4485AB 0%, #5A9BC4 100%);
+    --gradient-hero: linear-gradient(135deg, #1A1A2E 0%, #4485AB 50%, #5A9BC4 100%);
+    --gradient-accent: linear-gradient(135deg, #DD7E7C 0%, #F5A5A3 100%);
     
     /* Spacing */
     --section-padding: 100px;
@@ -361,12 +361,12 @@ p {
 .btn-primary {
     background: var(--gradient-primary);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(43, 122, 79, 0.3);
+    box-shadow: 0 4px 15px rgba(68, 133, 171, 0.3);
 }
 
 .btn-primary:hover {
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(43, 122, 79, 0.4);
+    box-shadow: 0 8px 25px rgba(68, 133, 171, 0.4);
 }
 
 .btn-secondary {
@@ -391,7 +391,7 @@ p {
     background: var(--primary);
     color: var(--white);
     transform: translateY(-3px);
-    box-shadow: 0 8px 25px rgba(43, 122, 79, 0.3);
+    box-shadow: 0 8px 25px rgba(68, 133, 171, 0.3);
 }
 
 /* Cards - Modern Design */
@@ -434,7 +434,7 @@ p {
 .service-card:hover,
 .value-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 20px 60px rgba(43, 122, 79, 0.15);
+    box-shadow: 0 20px 60px rgba(68, 133, 171, 0.15);
 }
 
 .service-icon {
@@ -507,7 +507,7 @@ p {
 
 .stat-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 50px rgba(43, 122, 79, 0.15);
+    box-shadow: 0 15px 50px rgba(68, 133, 171, 0.15);
 }
 
 .stat-card h3 {
@@ -598,9 +598,9 @@ p {
 }
 
 .project-status.operational {
-    background: linear-gradient(135deg, #38A169 0%, #48BB78 100%);
+    background: linear-gradient(135deg, #DD7E7C 0%, #F5A5A3 100%);
     color: var(--white);
-    box-shadow: 0 4px 15px rgba(56, 161, 105, 0.3);
+    box-shadow: 0 4px 15px rgba(221, 126, 124, 0.3);
 }
 
 .project-location {
@@ -610,10 +610,10 @@ p {
 }
 
 .project-specs {
-    background: linear-gradient(135deg, rgba(43, 122, 79, 0.05) 0%, rgba(58, 155, 95, 0.05) 100%);
+    background: linear-gradient(135deg, rgba(68, 133, 171, 0.05) 0%, rgba(90, 155, 196, 0.05) 100%);
     padding: 2.5rem;
     border-radius: 20px;
-    border: 2px solid rgba(43, 122, 79, 0.1);
+    border: 2px solid rgba(68, 133, 171, 0.1);
 }
 
 .spec-item {
@@ -642,9 +642,9 @@ p {
 /* Process Steps */
 .process-steps {
     padding: 3rem;
-    background: linear-gradient(135deg, rgba(43, 122, 79, 0.03) 0%, rgba(58, 155, 95, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(68, 133, 171, 0.03) 0%, rgba(90, 155, 196, 0.03) 100%);
     border-radius: 20px;
-    border: 2px solid rgba(43, 122, 79, 0.1);
+    border: 2px solid rgba(68, 133, 171, 0.1);
 }
 
 .step {
@@ -653,7 +653,7 @@ p {
     gap: 2rem;
     margin-bottom: 2.5rem;
     padding-bottom: 2.5rem;
-    border-bottom: 2px dashed rgba(43, 122, 79, 0.2);
+    border-bottom: 2px dashed rgba(68, 133, 171, 0.2);
 }
 
 .step:last-child {
@@ -674,7 +674,7 @@ p {
     font-weight: 700;
     font-size: 1.3rem;
     flex-shrink: 0;
-    box-shadow: 0 4px 15px rgba(43, 122, 79, 0.3);
+    box-shadow: 0 4px 15px rgba(68, 133, 171, 0.3);
 }
 
 .step-content h5 {
@@ -719,7 +719,7 @@ p {
 .form-group textarea {
     width: 100%;
     padding: 15px 20px;
-    border: 2px solid rgba(43, 122, 79, 0.15);
+    border: 2px solid rgba(68, 133, 171, 0.15);
     border-radius: 12px;
     font-size: 1rem;
     font-family: 'Poppins', sans-serif;
@@ -733,7 +733,7 @@ p {
     outline: none;
     border-color: var(--primary);
     background: var(--white);
-    box-shadow: 0 0 0 4px rgba(43, 122, 79, 0.1);
+    box-shadow: 0 0 0 4px rgba(68, 133, 171, 0.1);
 }
 
 .contact-info {
@@ -749,13 +749,13 @@ p {
 .contact-item {
     margin-bottom: 2.5rem;
     padding: 1.5rem;
-    background: linear-gradient(135deg, rgba(43, 122, 79, 0.03) 0%, rgba(58, 155, 95, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(68, 133, 171, 0.03) 0%, rgba(90, 155, 196, 0.03) 100%);
     border-radius: 15px;
     transition: all 0.3s ease;
 }
 
 .contact-item:hover {
-    background: linear-gradient(135deg, rgba(43, 122, 79, 0.08) 0%, rgba(58, 155, 95, 0.08) 100%);
+    background: linear-gradient(135deg, rgba(68, 133, 171, 0.08) 0%, rgba(90, 155, 196, 0.08) 100%);
     transform: translateX(5px);
 }
 
@@ -843,7 +843,7 @@ p {
 .feature {
     margin-bottom: 2.5rem;
     padding: 2rem;
-    background: linear-gradient(135deg, rgba(43, 122, 79, 0.03) 0%, rgba(58, 155, 95, 0.03) 100%);
+    background: linear-gradient(135deg, rgba(68, 133, 171, 0.03) 0%, rgba(90, 155, 196, 0.03) 100%);
     border-radius: 15px;
     border-left: 4px solid var(--primary);
     transition: all 0.3s ease;
@@ -851,7 +851,7 @@ p {
 
 .feature:hover {
     transform: translateX(10px);
-    box-shadow: 0 5px 20px rgba(43, 122, 79, 0.1);
+    box-shadow: 0 5px 20px rgba(68, 133, 171, 0.1);
 }
 
 .feature:last-child {
