@@ -51,8 +51,8 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
 /* Navigation */
 .navbar {
-    background: #FFB6C1;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
     position: fixed;
     top: 0;
     width: 100%;
@@ -66,19 +66,8 @@ p { margin-bottom: 1rem; color: #4a5568; }
     padding: 1rem 20px;
 }
 
-.nav-brand {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-}
-
-.nav-logo {
-    height: 45px;
-    width: auto;
-}
-
 .nav-brand h2 {
-    color: #2d3748;
+    color: #2b6cb0;
     margin: 0;
     font-size: 1.5rem;
 }
@@ -90,16 +79,14 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
 .nav-link {
     text-decoration: none;
-    color: #2d3748;
+    color: #4a5568;
     font-weight: 500;
-    transition: all 0.3s ease;
-    opacity: 0.8;
+    transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
-    opacity: 1;
-    color: #1a202c;
+    color: #2b6cb0;
 }
 
 .nav-toggle {
@@ -111,7 +98,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 .nav-toggle span {
     width: 25px;
     height: 3px;
-    background: #2d3748;
+    background: #4a5568;
     margin: 3px 0;
     transition: 0.3s;
 }
@@ -605,10 +592,10 @@ p { margin-bottom: 1rem; color: #4a5568; }
         top: 100%;
         left: 0;
         right: 0;
-        background: #FFB6C1;
+        background: white;
         flex-direction: column;
         padding: 1rem;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.15);
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         gap: 0;
     }
 
@@ -618,15 +605,7 @@ p { margin-bottom: 1rem; color: #4a5568; }
 
     .nav-link {
         padding: 0.75rem 0;
-        border-bottom: 1px solid rgba(45, 55, 72, 0.2);
-    }
-
-    .nav-logo {
-        height: 35px;
-    }
-
-    .nav-brand h2 {
-        font-size: 1.2rem;
+        border-bottom: 1px solid #e2e8f0;
     }
 
     .nav-toggle {
