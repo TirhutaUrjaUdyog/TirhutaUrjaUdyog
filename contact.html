@@ -5,18 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Tirhuta Urja Udyog</title>
     <meta name="description" content="Get in touch with Tirhuta Urja Udyog for partnerships, inquiries, and business opportunities in clean energy solutions.">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
-            <div class="nav-brand">
-                <h2>Tirhuta Urja Udyog</h2>
-            </div>
+            <a href="index.html" class="nav-brand">
+                <img src="tirhuta-logo.png" alt="Tirhuta Urja Udyog Logo" class="nav-logo">
+            </a>
             <div class="nav-menu" id="nav-menu">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
@@ -35,7 +32,7 @@
     <!-- Page Header -->
     <section class="page-header">
         <div class="container">
-            <h1>Contact Us</h1>
+            <h1>Let's Connect</h1>
             <p>Ready to discuss clean energy solutions and partnership opportunities</p>
         </div>
     </section>
@@ -44,80 +41,156 @@
     <section class="section">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="contact-form-section">
-                        <h2>Get in Touch</h2>
-                        <p>Whether you're interested in our bio-energy solutions, partnership opportunities, or have general inquiries, we'd love to hear from you.</p>
-                        
-                        <form class="contact-form" id="contact-form">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="company">Company/Organization</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
+                <div class="service-card" style="grid-column: 1 / -1;">
+                    <h2>Get in Touch</h2>
+                    <p class="lead">We're here to answer your questions and explore opportunities together</p>
+                    
+                    <p>Whether you're interested in our bio-energy solutions, exploring partnership opportunities, seeking investment information, or have general inquiries about our work, we'd love to hear from you. Our team is committed to responding promptly and providing the information you need.</p>
+
+                    <form class="contact-form" id="contact-form" style="margin-top: 3rem;">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
                             </div>
                             <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a topic</option>
-                                    <option value="partnership">Partnership Opportunities</option>
-                                    <option value="investment">Investment Inquiries</option>
-                                    <option value="supply">Bio-Gas Supply</option>
-                                    <option value="fertilizer">Organic Fertilizer</option>
-                                    <option value="general">General Inquiry</option>
-                                </select>
+                                <label for="email">Email Address *</label>
+                                <input type="email" id="email" name="email" placeholder="your.email@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+91 XXXXX XXXXX">
                             </div>
                             <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Please describe your inquiry in detail..."></textarea>
+                                <label for="company">Company/Organization</label>
+                                <input type="text" id="company" name="company" placeholder="Your company name">
                             </div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </form>
-                    </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="partnership">Partnership Opportunities</option>
+                                <option value="investment">Investment Inquiries</option>
+                                <option value="supply">Bio-Gas Supply Information</option>
+                                <option value="fertilizer">Organic Fertilizer Purchase</option>
+                                <option value="technology">Technology Collaboration</option>
+                                <option value="career">Career Opportunities</option>
+                                <option value="general">General Inquiry</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Please tell us about your inquiry in detail. The more information you provide, the better we can assist you..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
                 </div>
-                <div class="col-lg-4">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        
-                        <div class="contact-item">
-                            <h4>📧 Email</h4>
-                            <p><strong><em>info@tirhuta.in</em></strong></p>
-                        </div>
+            </div>
+        </div>
+    </section>
 
-                        <div class="contact-item">
-                            <h4>📞 Phone</h4>
-                            <p><strong>+91 72890 XXXXX</strong></p>
-                        </div>
+    <!-- Contact Information -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="section-header">
+                <h2>Contact Information</h2>
+                <p>Multiple ways to reach us</p>
+            </div>
 
-                        <div class="contact-item">
-                            <h4>🏢 Corporate Office</h4>
-                            <p>803, Synergy Business Park<br>
-                            Sahakar Wadi, Off Aarey Road<br>
-                            Goregaon (East)<br>
-                            Mumbai - 400063, India</p>
-                        </div>
+            <div class="row">
+                <div class="contact-item">
+                    <h4>📧 Email Us</h4>
+                    <p><strong>General Inquiries:</strong> info@tirhuta.in</p>
+                    <p>We typically respond to emails within 24-48 hours during business days.</p>
+                </div>
 
-                        <div class="contact-item">
-                            <h4>🏭 Operational Facility</h4>
-                            <p>Asambia Village<br>
-                            Mandvi Taluka<br>
-                            Kutch, Gujarat</p>
-                        </div>
-                    </div>
+                <div class="contact-item">
+                    <h4>📞 Call Us</h4>
+                    <p><strong>Phone:</strong> +91 72890 XXXXX</p>
+                    <p>Available Monday - Friday, 9:00 AM - 6:00 PM IST</p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>🏢 Corporate Office</h4>
+                    <p><strong>Address:</strong><br>
+                    803, Synergy Business Park<br>
+                    Sahakar Wadi, Off Aarey Road<br>
+                    Goregaon (East)<br>
+                    Mumbai - 400063<br>
+                    Maharashtra, India</p>
+                </div>
+
+                <div class="contact-item">
+                    <h4>🏭 Operational Facility</h4>
+                    <p><strong>Location:</strong><br>
+                    Asambia Village<br>
+                    Mandvi Taluka<br>
+                    Kutch District<br>
+                    Gujarat, India</p>
+                    <p><em>Note: Site visits by appointment only</em></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Quick answers to common inquiries</p>
+            </div>
+
+            <div class="row">
+                <div class="service-card">
+                    <h4>Q: How can I purchase your organic fertilizer?</h4>
+                    <p>Contact us through the form above or email us at info@tirhuta.in with details about your requirements, including quantity needed and location. Our team will provide pricing and availability information.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Q: Do you accept site visits?</h4>
+                    <p>Yes, we welcome site visits to our operational facility in Kutch, Gujarat. Please contact us in advance to schedule an appointment. This helps us ensure safety protocols and provide you with a comprehensive tour.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Q: Are you looking for investment partners?</h4>
+                    <p>We're always open to discussions with strategic investors who share our vision for sustainable energy. Please reach out through our contact form or email with information about your investment interests.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Q: Can I supply agricultural waste to your facility?</h4>
+                    <p>We work with local farmers and agricultural suppliers in regions where we operate. If you have consistent agricultural waste available, please contact us to discuss potential supply arrangements.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Q: Do you have job openings?</h4>
+                    <p>As we expand, we periodically have openings for various roles. Please send your resume and area of interest to info@tirhuta.in, and we'll keep your information on file for relevant opportunities.</p>
+                </div>
+
+                <div class="service-card">
+                    <h4>Q: How can I learn more about bio-gas technology?</h4>
+                    <p>Explore our "What We Do" section for detailed information about our CBG production process and technology. For more specific technical inquiries, feel free to contact our team directly.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Make an Impact Together?</h2>
+                <p>Let's explore how we can collaborate to build a sustainable energy future</p>
+                <div class="hero-buttons">
+                    <a href="#contact-form" class="btn btn-primary">Send Us a Message</a>
+                    <a href="about.html" class="btn btn-secondary">Learn More About Us</a>
                 </div>
             </div>
         </div>
@@ -129,11 +202,12 @@
             <div class="footer-content">
                 <div class="footer-section">
                     <h3>Tirhuta Urja Udyog Pvt Ltd</h3>
-                    <p>Powering India's clean energy future through innovative bio-gas and organic fertilizer solutions.</p>
+                    <p>Leading India's bio-energy revolution through innovative compressed bio-gas and organic fertilizer solutions. Creating sustainable value for communities and the environment.</p>
                 </div>
                 <div class="footer-section">
                     <h4>Quick Links</h4>
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="what-we-do.html">What We Do</a></li>
                         <li><a href="projects.html">Projects</a></li>
@@ -141,20 +215,18 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
-                    <p><strong>Email:</strong> <em>info@tirhuta.in</em></p>
+                    <h4>Get in Touch</h4>
+                    <p><strong>Email:</strong> info@tirhuta.in</p>
                     <p><strong>Phone:</strong> +91 72890 XXXXX</p>
-                    <p><strong>Address:</strong> 803, Synergy Business Park, Sahakar Wadi, Off Aarey Road, Goregaon (East), Mumbai - 400063</p>
+                    <p><strong>Office:</strong> 803, Synergy Business Park, Sahakar Wadi, Off Aarey Road, Goregaon (East), Mumbai - 400063</p>
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 Tirhuta Urja Udyog Pvt Ltd. All rights reserved.</p>
+                <p>&copy; 2024 Tirhuta Urja Udyog Pvt Ltd. All rights reserved. | Powering India's Clean Energy Future</p>
             </div>
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
-
 </html>
-
